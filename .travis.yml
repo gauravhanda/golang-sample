@@ -1,3 +1,3 @@
 language: go
 sudo: false
-script: make
+script: make -f makefile build
