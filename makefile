@@ -6,8 +6,7 @@ BUILD_PKGS := $(RELATIVE_PATH)/mathutil $(RELATIVE_PATH)/geometry-app $(RELATIVE
 
 # Default target is to build the packages but clean them before
 build	: clean
-		pwd\
-		ls -all \
+		pwd \
 		$(GOCOMMAND) build $(BUILD_PKGS)
 
 # Delete all packages and install files
