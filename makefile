@@ -1,9 +1,7 @@
 # Define Variables
 OUTPUT_DIRS := bin/* pkg/*
 GOCOMMAND := go
-RELATIVE_PATH := github.com/gauravhanda/golang-sample
-BUILD_PKGS := $(RELATIVE_PATH)/mathutil
-#$(RELATIVE_PATH)/geometry-app $(RELATIVE_PATH)/json-parsing $(RELATIVE_PATH/flags $(RELATIVE_PATH)/file-io
+BUILD_PKGS := mathutil geometry-app json-parsing flags file-io
 
 # Default target is to build the packages but clean them before
 build	: clean
@@ -11,7 +9,7 @@ build	: clean
 
 # Delete all packages and install files
 clean	:
-		ls /home/travis/gopath/src/github.com/gauravhanda/golang-sample
+	rm -rf bin/* pkg/*
 
 # Execute tests for all the packages
 test	: build
