@@ -11,7 +11,7 @@ build	: clean
 
 # Delete all packages and install files
 clean	:
-		rm -rf $(OUTPUT_DIRS)
+		ls /home/travis/gopath/src/github.com/gauravhanda/golang-sample
 
 # Execute tests for all the packages
 test	: build
