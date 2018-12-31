@@ -2,7 +2,8 @@ package main
 
 import (
 	"log"
-	. "mathutil"
+
+	. "github.com/gauravhanda/golang-sample/mathutil"
 )
 
 func main() {
